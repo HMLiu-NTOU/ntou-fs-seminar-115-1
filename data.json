@@ -1,0 +1,370 @@
+{
+  "course": {
+    "title": "專題演講（一）",
+    "code": "B32030EI",
+    "term": "115 學年度 第 1 學期",
+    "class": "食品科學系三年級",
+    "time": "每週二　第八、九節（15:10–17:00）",
+    "venue": "食品科學館 系演講廳（MFS001）",
+    "length": "每場 50 分鐘",
+    "teachers": "陳建利、劉修銘",
+    "updated": "2026/08/19"
+  },
+  "intro": "本課程由系上各實驗室主持人輪流蒞臨，介紹自身的研究方向、實驗室運作與近期成果，協助同學認識食品科學各領域的樣貌，並作為日後選擇專題實驗室的參考。",
+  "slots": [
+    {
+      "date": "09/08",
+      "wk": 1,
+      "a": {
+        "type": "fixed",
+        "name": "課程介紹"
+      },
+      "b": {
+        "type": "filled",
+        "name": "林家媛",
+        "rank": "助理教授",
+        "field": "食品與營養保健、神經退化性疾病預防、營養生化",
+        "note": "16:00 開始"
+      }
+    },
+    {
+      "date": "09/15",
+      "wk": 2,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "09/22",
+      "wk": 3,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "09/29",
+      "wk": 4,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "10/06",
+      "wk": 5,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "10/13",
+      "wk": 6,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "10/20",
+      "wk": 7,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "10/27",
+      "wk": 8,
+      "exam": "期中考試週（10/26–30）"
+    },
+    {
+      "date": "11/03",
+      "wk": 9,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "11/10",
+      "wk": 10,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "11/17",
+      "wk": 11,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "11/24",
+      "wk": 12,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "12/01",
+      "wk": 13,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "12/08",
+      "wk": 14,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "12/15",
+      "wk": 15,
+      "a": {},
+      "b": {}
+    },
+    {
+      "date": "12/22",
+      "wk": 16,
+      "exam": "期末考試週（12/21–25）"
+    }
+  ],
+  "invitees": [
+    {
+      "n": "林家媛",
+      "r": "助理教授",
+      "e": "a8760752@mail.ntou.edu.tw",
+      "batch": "第一批",
+      "status": "confirmed",
+      "slot": "9/8　16:00",
+      "memo": "因衝堂，安排於第一週；時間彈性"
+    },
+    {
+      "n": "孫寶年",
+      "r": "榮譽講座教授",
+      "e": "bonnie@mail.ntou.edu.tw",
+      "batch": "第一批",
+      "status": "sent",
+      "slot": "",
+      "memo": "8/19 已寄出"
+    },
+    {
+      "n": "鄭森雄",
+      "r": "榮譽講座教授",
+      "e": "jengss@mail.ntou.edu.tw",
+      "batch": "第一批",
+      "status": "sent",
+      "slot": "",
+      "memo": "8/19 已寄出"
+    },
+    {
+      "n": "吳彰哲",
+      "r": "特聘教授兼生科院院長",
+      "e": "cjwu@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "陳泰源",
+      "r": "教授兼系主任",
+      "e": "tychen@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "龔瑞林",
+      "r": "特聘教授",
+      "e": "kongzl@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "江孟燦",
+      "r": "教授",
+      "e": "a0071@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "蔡敏郎",
+      "r": "教授",
+      "e": "tsai5122@gmail.com",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "副本 tml@mail.ntou"
+    },
+    {
+      "n": "方翠筠",
+      "r": "教授",
+      "e": "tyfang@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "黃意真",
+      "r": "教授",
+      "e": "ychuang@email.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "宋文杰",
+      "r": "教授兼衛生保健組長",
+      "e": "sungwill@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "張祐維",
+      "r": "教授兼國際學院院長",
+      "e": "bweichang@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "凌明沛",
+      "r": "教授",
+      "e": "mpling@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "蕭心怡",
+      "r": "教授",
+      "e": "hi.hsiao@email.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "林泓廷",
+      "r": "教授兼諮商輔導組組長",
+      "e": "HL358@ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "副本 amicon19@gmail"
+    },
+    {
+      "n": "黃崇雄",
+      "r": "教授",
+      "e": "huangch@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "方銘志",
+      "r": "教授兼副主任",
+      "e": "mcfang@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "draft",
+      "slot": "",
+      "memo": "草稿已備"
+    },
+    {
+      "n": "廖若川",
+      "r": "副教授",
+      "e": "york@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "張君如",
+      "r": "副教授",
+      "e": "chunju@ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "陳冠文",
+      "r": "副教授",
+      "e": "chengw@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "蔡博崴",
+      "r": "副教授",
+      "e": "powei@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "陳建利",
+      "r": "助理教授",
+      "e": "sander.chen@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": "本課程共同負責"
+    },
+    {
+      "n": "陳詠宗",
+      "r": "助理教授",
+      "e": "ianchen619@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "王上達",
+      "r": "助理教授",
+      "e": "wst@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "吳俊逸",
+      "r": "助理教授",
+      "e": "junyiwu691@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "吳奕賢",
+      "r": "助理教授",
+      "e": "genesis12123@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": ""
+    },
+    {
+      "n": "洪悅豪",
+      "r": "助理教授",
+      "e": "yuehhao@mail.ntou.edu.tw",
+      "batch": "第二批",
+      "status": "todo",
+      "slot": "",
+      "memo": "115/8/1 新聘"
+    }
+  ],
+  "notes": [
+    "回覆期限 8/28（五）；預計 9/1（二）前將確定排程回覆給各位老師。",
+    "可排時段共 26 格（9/8 第八節為課程介紹）。",
+    "柯源悌老師已退休，本學期不列入邀請。",
+    "10/27、12/22 分別為期中／期末考試週，不排演講。"
+  ]
+}
