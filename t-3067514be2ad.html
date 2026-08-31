@@ -30,6 +30,15 @@ tbody tr:last-child td{border-bottom:none}
 td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600;font-size:14.5px}
 td.wk{color:#a8a29e;font-size:12px;white-space:nowrap}
 .tbd{color:#c4bfb8}
+td.tent{background:#fafaf9}
+td.tent .who{color:#a8a29e;font-weight:500}
+td.tent .field{color:#c4bfb8}
+td.tent .rk{color:#c4bfb8}
+.mark{display:inline-block;font-size:10px;padding:1px 6px;border-radius:99px;
+  margin-left:7px;vertical-align:1px;white-space:nowrap;border:1px solid}
+.m-fix{color:#2f6b46;border-color:#c2ddcc;background:#f2f8f4}
+.m-tent{color:#a8a29e;border-color:#e7e3dd;background:#fbfaf8}
+.rk{color:#8b8681;font-weight:400}
 .fixedcell{color:#57534e}
 .who{font-weight:600}
 .field{display:block;font-size:12px;color:#8b8681;margin-top:3px;font-weight:400;line-height:1.5}
@@ -77,63 +86,64 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid #e7e3dd;font-size:1
 <div class="lede">本課程由系上各實驗室主持人輪流蒞臨，介紹自身的研究方向、實驗室運作與近期成果，協助同學認識食品科學各領域的樣貌，並作為日後選擇專題實驗室的參考。</div>
 <div class="stats">
 <div class="stat"><div class="n">2</div><div class="l">已確認</div></div>
-<div class="stat"><div class="n">13</div><div class="l">已回覆待排</div></div>
-<div class="stat"><div class="n">10</div><div class="l">已寄出待覆</div></div>
+<div class="stat"><div class="n">15</div><div class="l">已回覆待排</div></div>
+<div class="stat"><div class="n">8</div><div class="l">已寄出待覆</div></div>
 <div class="stat"><div class="n">2</div><div class="l">不克參加</div></div>
 <div class="stat"><div class="n">27</div><div class="l">邀請對象</div></div>
 <div class="stat"><div class="n">26</div><div class="l">可排時段</div></div>
 </div>
 <div class="card"><h2>演講排程</h2><table>
 <thead><tr><th>日期（週二）</th><th>週次</th><th>15:10 – 16:00</th><th>16:05 – 16:55</th></tr></thead><tbody>
-<tr><td class="date">09/08</td><td class="wk">第 1 週</td><td><span class="fixedcell">課程介紹</span></td><td><span class="who">林家媛　助理教授</span><span class="tag">16:00 開始</span><span class="field">食品與營養保健、神經退化性疾病預防、營養生化</span></td></tr>
-<tr><td class="date">09/15</td><td class="wk">第 2 週</td><td><span class="tbd">待安排</span></td><td><span class="who">廖若川　副教授</span></td></tr>
-<tr><td class="date">09/22</td><td class="wk">第 3 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">09/29</td><td class="wk">第 4 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">10/06</td><td class="wk">第 5 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">10/13</td><td class="wk">第 6 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">10/20</td><td class="wk">第 7 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
+<tr><td class="date">09/08</td><td class="wk">第 1 週</td><td><span class="fixedcell">課程介紹</span></td><td><span class="who">林家媛<span class="rk">　助理教授</span></span><span class="mark m-fix">確定</span><span class="tag">16:00 開始</span><span class="field">食品與營養保健、神經退化性疾病預防、營養生化</span></td></tr>
+<tr><td class="date">09/15</td><td class="wk">第 2 週</td><td><span class="who">蔡敏郎<span class="rk">　教授</span></span><span class="mark m-fix">確定</span></td><td><span class="who">廖若川<span class="rk">　副教授</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">09/22</td><td class="wk">第 3 週</td><td><span class="who">張祐維<span class="rk">　教授兼國際學院院長</span></span><span class="mark m-fix">確定</span></td><td><span class="who">蕭心怡<span class="rk">　教授</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">09/29</td><td class="wk">第 4 週</td><td><span class="who">凌明沛<span class="rk">　教授</span></span><span class="mark m-fix">確定</span></td><td><span class="who">林泓廷<span class="rk">　教授兼諮商輔導組組長</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">10/06</td><td class="wk">第 5 週</td><td class="tent"><span class="who">方翠筠<span class="rk">　教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">陳泰源<span class="rk">　教授兼系主任</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第九節</span></td></tr>
+<tr><td class="date">10/13</td><td class="wk">第 6 週</td><td class="tent"><span class="who">方銘志<span class="rk">　教授兼副主任</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">宋文杰<span class="rk">　教授兼衛生保健組長</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">10/20</td><td class="wk">第 7 週</td><td class="tent"><span class="who">洪悅豪<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">黃崇雄<span class="rk">　教授</span></span><span class="mark m-tent">暫定</span></td></tr>
 <tr class="exam"><td class="date">10/27</td><td class="wk">第 8 週</td><td colspan="2">期中考試週（10/26–30）－ 不排演講</td></tr>
-<tr><td class="date">11/03</td><td class="wk">第 9 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">11/10</td><td class="wk">第 10 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">11/17</td><td class="wk">第 11 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">11/24</td><td class="wk">第 12 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">12/01</td><td class="wk">第 13 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
-<tr><td class="date">12/08</td><td class="wk">第 14 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
+<tr><td class="date">11/03</td><td class="wk">第 9 週</td><td class="tent"><span class="who">黃意真<span class="rk">　教授</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第八節</span></td><td class="tent"><span class="who">陳詠宗<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">11/10</td><td class="wk">第 10 週</td><td class="tent"><span class="who">孫寶年<span class="rk">　榮譽講座教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">吳彰哲<span class="rk">　特聘教授兼生科院院長</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">11/17</td><td class="wk">第 11 週</td><td class="tent"><span class="who">龔瑞林<span class="rk">　特聘教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">江孟燦<span class="rk">　教授</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">11/24</td><td class="wk">第 12 週</td><td class="tent"><span class="who">吳俊逸<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">陳冠文<span class="rk">　副教授</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">12/01</td><td class="wk">第 13 週</td><td class="tent"><span class="who">蔡博崴<span class="rk">　副教授</span></span><span class="mark m-tent">暫定</span><span class="tag">老師指定</span></td><td class="tent"><span class="who">王上達<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">12/08</td><td class="wk">第 14 週</td><td class="tent"><span class="who">吳奕賢<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">陳建利<span class="rk">　助理教授</span></span><span class="mark m-tent">暫定</span></td></tr>
 <tr><td class="date">12/15</td><td class="wk">第 15 週</td><td><span class="tbd">待安排</span></td><td><span class="tbd">待安排</span></td></tr>
 <tr class="exam"><td class="date">12/22</td><td class="wk">第 16 週</td><td colspan="2">期末考試週（12/21–25）－ 不排演講</td></tr>
 </tbody></table></div>
+<div class="lede" style="border-left-color:#c2ddcc"><span class="mark m-fix">確定</span>　日期與時段已定案。　<span class="mark m-tent">暫定</span>　初步預排，仍可能調整。</div>
 <div class="card"><h2>邀請狀態　·　第一批（3 位）</h2><table><thead><tr><th>老師</th><th>職稱</th><th>狀態</th><th>已排時段</th><th>備註</th></tr></thead><tbody>
-<tr><td class="who">林家媛</td><td class="memo">助理教授</td><td><span class="pill p-confirmed">已回覆確認</span></td><td>9/8　16:00</td><td class="memo">因衝堂，安排於第一週；時間彈性</td></tr>
-<tr><td class="who">孫寶年</td><td class="memo">榮譽講座教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/19 已寄出</td></tr>
+<tr><td class="who">林家媛</td><td class="memo">助理教授</td><td><span class="pill p-confirmed">已回覆確認</span></td><td>9/8　16:05</td><td class="memo">因衝堂，安排於第一週；時間彈性</td></tr>
+<tr><td class="who">孫寶年</td><td class="memo">榮譽講座教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>11/10　15:10</td><td class="memo">8/19 已寄出</td></tr>
 <tr><td class="who">鄭森雄</td><td class="memo">榮譽講座教授</td><td><span class="pill p-declined">本學期不克參加</span></td><td><span class=tbd>—</span></td><td class="memo">8/29 回覆「本年度先暫停一次」，本學期不安排</td></tr>
 </tbody></table></div>
 <div class="card"><h2>邀請狀態　·　第二批（24 位）</h2><table><thead><tr><th>老師</th><th>職稱</th><th>狀態</th><th>已排時段</th><th>備註</th></tr></thead><tbody>
-<tr><td class="who">吳彰哲</td><td class="memo">特聘教授兼生科院院長</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">陳泰源</td><td class="memo">教授兼系主任</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">龔瑞林</td><td class="memo">特聘教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">江孟燦</td><td class="memo">教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">蔡敏郎</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">9/15、9/22 或 9/29 其中一天的 15:10 場</td></tr>
-<tr><td class="who">方翠筠</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">10/6、10/13、10/20（表格勾 OK，欄位未明；2022 年曾表示偏好 15:10 場）</td></tr>
-<tr><td class="who">黃意真</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">11/3、11/10、11/17 的 15:10 場</td></tr>
-<tr><td class="who">宋文杰</td><td class="memo">教授兼衛生保健組長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">除 11/3 外皆可</td></tr>
-<tr><td class="who">張祐維</td><td class="memo">教授兼國際學院院長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">傾向 15:10 場；勾 9/22、9/29，9/29 已被凌明沛老師選走，已去信提議 9/22</td></tr>
-<tr><td class="who">凌明沛</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">週二常需赴臺中，時間不確定；表示若不好安排可跳過。已去信提議排後段並可彈性對調</td></tr>
-<tr><td class="who">蕭心怡</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">改提 9/22（自願讓出 9/29），時段待定</td></tr>
-<tr><td class="who">林泓廷</td><td class="memo">教授兼諮商輔導組組長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">9/29，15:10 或 16:05 皆可</td></tr>
-<tr><td class="who">黃崇雄</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">除 10/13 外皆可</td></tr>
-<tr><td class="who">方銘志</td><td class="memo">教授兼副主任</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">9/29、10/6、10/13、11/17、11/24 兩時段皆可</td></tr>
+<tr><td class="who">吳彰哲</td><td class="memo">特聘教授兼生科院院長</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>11/10　16:05</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">陳泰源</td><td class="memo">教授兼系主任</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/6　16:05</td><td class="memo">第九節（16:05）皆可，日期不限</td></tr>
+<tr><td class="who">龔瑞林</td><td class="memo">特聘教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>11/17　15:10</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">江孟燦</td><td class="memo">教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>11/17　16:05</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">蔡敏郎</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>9/15　15:10</td><td class="memo">9/15、9/22 或 9/29 其中一天的 15:10 場</td></tr>
+<tr><td class="who">方翠筠</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/6　15:10</td><td class="memo">10/6、10/13、10/20（表格勾 OK，欄位未明；2022 年曾表示偏好 15:10 場）</td></tr>
+<tr><td class="who">黃意真</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>11/3　15:10</td><td class="memo">11/3、11/10、11/17 的 15:10 場</td></tr>
+<tr><td class="who">宋文杰</td><td class="memo">教授兼衛生保健組長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/13　16:05</td><td class="memo">除 11/3 外皆可</td></tr>
+<tr><td class="who">張祐維</td><td class="memo">教授兼國際學院院長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>9/22　15:10</td><td class="memo">傾向 15:10 場；勾 9/22、9/29，9/29 已被凌明沛老師選走，已去信提議 9/22</td></tr>
+<tr><td class="who">凌明沛</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>9/29　15:10</td><td class="memo">週二常需赴臺中，時間不確定；表示若不好安排可跳過。已去信提議排後段並可彈性對調</td></tr>
+<tr><td class="who">蕭心怡</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>9/22　16:05</td><td class="memo">改提 9/22（自願讓出 9/29），時段待定</td></tr>
+<tr><td class="who">林泓廷</td><td class="memo">教授兼諮商輔導組組長</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>9/29　16:05</td><td class="memo">9/29，15:10 或 16:05 皆可</td></tr>
+<tr><td class="who">黃崇雄</td><td class="memo">教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/20　16:05</td><td class="memo">除 10/13 外皆可</td></tr>
+<tr><td class="who">方銘志</td><td class="memo">教授兼副主任</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/13　15:10</td><td class="memo">9/29、10/6、10/13、11/17、11/24 兩時段皆可</td></tr>
 <tr><td class="who">廖若川</td><td class="memo">副教授</td><td><span class="pill p-confirmed">已回覆確認</span></td><td>9/15　16:05</td><td class="memo">自選 9/15 第九節</td></tr>
 <tr><td class="who">張君如</td><td class="memo">副教授</td><td><span class="pill p-declined">本學期不克參加</span></td><td><span class=tbd>—</span></td><td class="memo">1151 學期請延長病假，本學期不安排</td></tr>
-<tr><td class="who">陳冠文</td><td class="memo">副教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">蔡博崴</td><td class="memo">副教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">陳建利</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">陳詠宗</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">時間皆可，由劉老師安排</td></tr>
-<tr><td class="who">王上達</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">吳俊逸</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">11/24、12/1 皆可（時段未指定）</td></tr>
-<tr><td class="who">吳奕賢</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td><span class=tbd>—</span></td><td class="memo">8/28 已寄出</td></tr>
-<tr><td class="who">洪悅豪</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td><span class=tbd>—</span></td><td class="memo">10/13、10/20、11/3、11/10、11/17、11/24、12/1 兩時段皆可</td></tr>
+<tr><td class="who">陳冠文</td><td class="memo">副教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>11/24　16:05</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">蔡博崴</td><td class="memo">副教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>12/1　15:10</td><td class="memo">指定 12/1 15:10</td></tr>
+<tr><td class="who">陳建利</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>12/8　16:05</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">陳詠宗</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>11/3　16:05</td><td class="memo">時間皆可，由劉老師安排</td></tr>
+<tr><td class="who">王上達</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>12/1　16:05</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">吳俊逸</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>11/24　15:10</td><td class="memo">11/24、12/1 皆可（時段未指定）</td></tr>
+<tr><td class="who">吳奕賢</td><td class="memo">助理教授</td><td><span class="pill p-sent">已寄出　待回覆</span></td><td>12/8　15:10</td><td class="memo">8/28 已寄出</td></tr>
+<tr><td class="who">洪悅豪</td><td class="memo">助理教授</td><td><span class="pill p-replied">已回覆　待排定</span></td><td>10/20　15:10</td><td class="memo">10/13、10/20、11/3、11/10、11/17、11/24、12/1 兩時段皆可</td></tr>
 </tbody></table></div>
-<div class="card"><h2>作業備註</h2><div style="padding:14px 18px"><ul class="notes"><li>回覆期限 8/28（五）；預計 9/1（二）前將確定排程回覆給各位老師。</li><li>可排時段共 26 格（9/8 第八節為課程介紹）。</li><li>柯源悌老師已退休，本學期不列入邀請。</li><li>10/27、12/22 分別為期中／期末考試週，不排演講。</li></ul></div></div>
+<div class="card"><h2>作業備註</h2><div style="padding:14px 18px"><ul class="notes"><li>回覆期限 9/2（三）；最遲 9/4（五）前將確定排程回覆給各位老師。</li><li>可排時段共 26 格（9/8 第八節為課程介紹）；已排入 24 位，12/15 兩格保留彈性。</li><li>九月四週為<b>確定</b>排程；10/6 以後為<b>暫定</b>（灰色），待未回覆的老師給時間後再調整。</li><li>柯源悌老師已退休，本學期不列入邀請。</li><li>10/27、12/22 分別為期中／期末考試週，不排演講。</li></ul></div></div>
 <footer>國立臺灣海洋大學 食品科學系　專題演講（一）（B32030EI）　完整版．授課教師內部使用</footer>
 </div>
 </body>
