@@ -72,10 +72,25 @@ tr.exam td{background:#faf8f5;color:#a8a29e;font-size:13px}
 .ct td{padding:9px 18px 9px 0;color:#44403c}
 .notes{font-size:12.5px;color:#8b8681;line-height:1.9;margin:0;padding-left:1.1em}
 footer{margin-top:34px;padding-top:18px;border-top:1px solid #e7e3dd;font-size:12px;color:#a8a29e}
+.tw{overflow-x:auto}
 @media (max-width:640px){
   .wrap{padding:22px 13px 56px} h1{font-size:21px}
   th,td{padding:9px 11px;font-size:13px} .facts{gap:4px 14px;font-size:12.5px}
   .mail{word-break:break-all}
+  /* 排程表：4 欄在手機上擠不下，改為每列一張卡片 */
+  .sched thead{display:none}
+  .sched tbody tr{display:block;padding:11px 13px 13px;border-bottom:1px solid #efece7}
+  .sched tbody tr:last-child{border-bottom:none}
+  .sched td{display:block;border:none;padding:0}
+  .sched td.date{display:inline;font-size:15px}
+  .sched td.wk{display:inline;margin-left:9px}
+  .sched td[data-t]{margin-top:9px;padding-left:11px;border-left:2px solid #e7e3dd}
+  .sched td[data-t]::before{content:attr(data-t);display:block;font-size:11px;
+    color:#a8a29e;letter-spacing:.04em;margin-bottom:2px}
+  .sched td[colspan]{margin-top:7px;font-size:13px}
+  .sched tr.exam td{background:none}
+  .sched td.tent{background:none}
+  .sched .field{margin-top:2px}
 }
 </style>
 </head>
@@ -90,7 +105,7 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid #e7e3dd;font-size:1
 <li>開課班級　<b>食品科學系三年級</b></li>
 <li>時間　<b>每週二　第八、九節（15:10–17:00）</b></li>
 <li>地點　<b>食品科學館 系演講廳（MFS001）</b></li>
-<li>每場　<b>每場 50 分鐘</b></li>
+<li>每場　<b>50 分鐘</b></li>
 <li>授課教師　<b>陳建利、劉修銘</b></li>
 </ul>
 <div class="updated">最後更新　2026/09/04　｜　完整版（授課教師內部使用）　·　公開連結請勿外傳</div>
@@ -104,23 +119,23 @@ footer{margin-top:34px;padding-top:18px;border-top:1px solid #e7e3dd;font-size:1
 <div class="stat"><div class="n">27</div><div class="l">邀請對象</div></div>
 <div class="stat"><div class="n">26</div><div class="l">可排時段</div></div>
 </div>
-<div class="card"><h2>演講排程</h2><table>
+<div class="card"><h2>演講排程</h2><div class="tw"><table class="sched">
 <thead><tr><th>日期（週二）</th><th>週次</th><th>15:10 – 16:00</th><th>16:05 – 16:55</th></tr></thead><tbody>
-<tr><td class="date">09/08</td><td class="wk">第 1 週</td><td><span class="fixedcell">課程介紹</span></td><td><span class="who">林家媛<span class="rk">　老師</span></span><span class="mark m-fix">確定</span><span class="tag">16:00 開始</span></td></tr>
-<tr><td class="date">09/15</td><td class="wk">第 2 週</td><td><span class="who">蔡敏郎<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td><span class="who">廖若川<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
-<tr><td class="date">09/22</td><td class="wk">第 3 週</td><td><span class="who">張祐維<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td><span class="who">蕭心怡<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
-<tr><td class="date">09/29</td><td class="wk">第 4 週</td><td><span class="who">凌明沛<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td><span class="who">林泓廷<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
-<tr><td class="date">10/06</td><td class="wk">第 5 週</td><td class="tent"><span class="who">方翠筠<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">江孟燦<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
-<tr><td class="date">10/13</td><td class="wk">第 6 週</td><td class="tent"><span class="who">方銘志<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">孫寶年<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">老師點名的時段</span></td></tr>
-<tr><td class="date">10/20</td><td class="wk">第 7 週</td><td class="tent"><span class="who">洪悅豪<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">陳冠文<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">09/08</td><td class="wk">第 1 週</td><td data-t="15:10 – 16:00"><span class="fixedcell">課程介紹</span></td><td data-t="16:05 – 16:55"><span class="who">林家媛<span class="rk">　老師</span></span><span class="mark m-fix">確定</span><span class="tag">16:00 開始</span></td></tr>
+<tr><td class="date">09/15</td><td class="wk">第 2 週</td><td data-t="15:10 – 16:00"><span class="who">蔡敏郎<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td data-t="16:05 – 16:55"><span class="who">廖若川<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">09/22</td><td class="wk">第 3 週</td><td data-t="15:10 – 16:00"><span class="who">張祐維<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td data-t="16:05 – 16:55"><span class="who">蕭心怡<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">09/29</td><td class="wk">第 4 週</td><td data-t="15:10 – 16:00"><span class="who">凌明沛<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td data-t="16:05 – 16:55"><span class="who">林泓廷<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td></tr>
+<tr><td class="date">10/06</td><td class="wk">第 5 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">方翠筠<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">江孟燦<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">10/13</td><td class="wk">第 6 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">方銘志<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">孫寶年<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">老師點名的時段</span></td></tr>
+<tr><td class="date">10/20</td><td class="wk">第 7 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">洪悅豪<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">陳冠文<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
 <tr class="exam"><td class="date">10/27</td><td class="wk">第 8 週</td><td colspan="2">期中考試週，停課一回</td></tr>
-<tr><td class="date">11/03</td><td class="wk">第 9 週</td><td><span class="who">林詠凱<span class="rk">　老師</span></span><span class="mark m-fix">確定</span><span class="tag">食品安全與風險管理研究所</span></td><td class="tent"><span class="who">饗賓餐旅事業股份有限公司</span><span class="mark m-tent">暫定</span><span class="tag">16:00 – 17:00</span></td></tr>
-<tr><td class="date">11/10</td><td class="wk">第 10 週</td><td class="tent"><span class="who">吳彰哲<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">僅第八節</span></td><td class="tent"><span class="who">陳泰源<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第九節</span></td></tr>
-<tr><td class="date">11/17</td><td class="wk">第 11 週</td><td class="tent"><span class="who">黃意真<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第八節</span></td><td class="tent"><span class="who">宋文杰<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
-<tr><td class="date">11/24</td><td class="wk">第 12 週</td><td class="tent"><span class="who">吳俊逸<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">吳奕賢<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
-<tr><td class="date">12/01</td><td class="wk">第 13 週</td><td class="tent"><span class="who">蔡博崴<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">已指定時段</span></td><td class="tent"><span class="who">劉修銘<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
-<tr><td class="date">12/08</td><td class="wk">第 14 週</td><td class="tent"><span class="who">王上達<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent"><span class="who">陳詠宗<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
-<tr><td class="date">12/15</td><td class="wk">第 15 週</td><td><span class="who">陳建利<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td class="tent"><span class="who">黃崇雄<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">11/03</td><td class="wk">第 9 週</td><td data-t="15:10 – 16:00"><span class="who">林詠凱<span class="rk">　老師</span></span><span class="mark m-fix">確定</span><span class="tag">食品安全與風險管理研究所</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">饗賓餐旅事業股份有限公司</span><span class="mark m-tent">暫定</span><span class="tag">16:00 – 17:00</span></td></tr>
+<tr><td class="date">11/10</td><td class="wk">第 10 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">吳彰哲<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">僅第八節</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">陳泰源<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第九節</span></td></tr>
+<tr><td class="date">11/17</td><td class="wk">第 11 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">黃意真<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">指定第八節</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">宋文杰<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">11/24</td><td class="wk">第 12 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">吳俊逸<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">吳奕賢<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">12/01</td><td class="wk">第 13 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">蔡博崴<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span><span class="tag">已指定時段</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">劉修銘<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">12/08</td><td class="wk">第 14 週</td><td class="tent" data-t="15:10 – 16:00"><span class="who">王上達<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">陳詠宗<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
+<tr><td class="date">12/15</td><td class="wk">第 15 週</td><td data-t="15:10 – 16:00"><span class="who">陳建利<span class="rk">　老師</span></span><span class="mark m-fix">確定</span></td><td class="tent" data-t="16:05 – 16:55"><span class="who">黃崇雄<span class="rk">　老師</span></span><span class="mark m-tent">暫定</span></td></tr>
 <tr class="exam"><td class="date">12/22</td><td class="wk">第 16 週</td><td colspan="2">期末考試週，停課一回</td></tr>
 </tbody></table></div>
 <div class="lede" style="border-left-color:#c2ddcc"><span class="mark m-fix">確定</span>　日期與時段已定案。　<span class="mark m-tent">暫定</span>　初步預排，仍可能調整。</div>
