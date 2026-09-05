@@ -1,0 +1,230 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>115-1 專題演講　座位查詢</title><style>
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.6 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+     color:#1a1a1a;background:#fff}
+.wrap{max-width:1000px;margin:0 auto;padding:18px 14px 40px}
+h1{font-size:19px;margin:0 0 2px}
+.sub{color:#666;font-size:12.5px;margin:0 0 16px}
+.stage{margin:0 auto 12px;max-width:44%;text-align:center;padding:7px;
+       border:1.5px solid #333;border-radius:4px;letter-spacing:.6em;font-weight:700;font-size:14px}
+.grid{display:grid;grid-template-columns:30px repeat(28,minmax(0,1fr));gap:2px;align-items:stretch}
+.rl{grid-column:1;font-size:10px;color:#999;display:flex;align-items:center;justify-content:flex-end;
+    padding-right:4px;white-space:nowrap}
+.seat{border:1px solid #c8c8c8;border-radius:3px;min-height:30px;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      font-size:10px;line-height:1.15;font-variant-numeric:tabular-nums;background:#fafafa}
+.seat.take{background:#eef3fb;border-color:#9db4d6}
+.seat.free{background:#fff;border-style:dashed;color:#bbb}
+.seat.bad{background:#f3f3f3;border-style:dashed;color:#aaa;font-size:8px}
+.seat.hit{background:#ffd84d;border:2px solid #b8860b;font-weight:700;color:#000;font-size:11px}
+.legend{margin:14px 0 0;font-size:12px;color:#555;display:flex;gap:16px;flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;
+          border:1px solid #c8c8c8;vertical-align:-2px;margin-right:5px}
+.note{margin-top:14px;font-size:12px;color:#555;line-height:1.8}
+@media print{.wrap{max-width:none;padding:0}@page{size:A4 landscape;margin:8mm}}
+
+.box{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap}
+.box input{flex:1 1 200px;min-width:0;padding:10px 12px;font-size:16px;
+           border:1px solid #bbb;border-radius:6px;font-variant-numeric:tabular-nums}
+.box button{padding:10px 20px;font-size:15px;border:0;border-radius:6px;
+            background:#1a4b8c;color:#fff;cursor:pointer}
+.box button:disabled{background:#999;cursor:progress}
+#ans{margin:0 0 16px;font-size:15px;min-height:1.6em}
+#ans b{font-size:19px;color:#b8860b}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw .grid{min-width:700px}
+.swipe{display:none;font-size:12px;color:#888;margin:6px 0 0}
+@media(max-width:640px){.swipe{display:block}}
+</style>
+<div class="wrap">
+<h1>專題演講（一）　座位查詢</h1>
+<p class="sub">食品科學館 系演講廳（MFS001）　｜　輸入你的學號，系統會標出你的座位</p>
+<div class="box">
+  <input id="q" inputmode="numeric" autocomplete="off" placeholder="輸入學號">
+  <button id="go">查詢</button>
+</div>
+<p id="ans"></p>
+<div class="stage">講　台</div>
+<div class="tw"><div class="grid"><div class="rl">1</div>
+<div class="seat free" style="grid-column:2" data-k="1-1" title="第1排 第1位"></div>
+<div class="seat free" style="grid-column:3" data-k="1-2" title="第1排 第2位"></div>
+<div class="seat free" style="grid-column:4" data-k="1-3" title="第1排 第3位"></div>
+<div class="seat free" style="grid-column:13" data-k="1-4" title="第1排 第4位"></div>
+<div class="seat free" style="grid-column:14" data-k="1-5" title="第1排 第5位"></div>
+<div class="seat free" style="grid-column:15" data-k="1-6" title="第1排 第6位"></div>
+<div class="seat free" style="grid-column:16" data-k="1-7" title="第1排 第7位"></div>
+<div class="seat free" style="grid-column:17" data-k="1-8" title="第1排 第8位"></div>
+<div class="seat free" style="grid-column:18" data-k="1-9" title="第1排 第9位"></div>
+<div class="seat free" style="grid-column:27" data-k="1-10" title="第1排 第10位"></div>
+<div class="seat free" style="grid-column:28" data-k="1-11" title="第1排 第11位"></div>
+<div class="seat free" style="grid-column:29" data-k="1-12" title="第1排 第12位"></div>
+<div class="rl">2</div>
+<div class="seat take" style="grid-column:2" data-k="2-1" title="第2排 第1位"></div>
+<div class="seat take" style="grid-column:3" data-k="2-2" title="第2排 第2位"></div>
+<div class="seat take" style="grid-column:4" data-k="2-3" title="第2排 第3位"></div>
+<div class="seat take" style="grid-column:5" data-k="2-4" title="第2排 第4位"></div>
+<div class="seat take" style="grid-column:12" data-k="2-5" title="第2排 第5位"></div>
+<div class="seat take" style="grid-column:13" data-k="2-6" title="第2排 第6位"></div>
+<div class="seat take" style="grid-column:14" data-k="2-7" title="第2排 第7位"></div>
+<div class="seat take" style="grid-column:15" data-k="2-8" title="第2排 第8位"></div>
+<div class="seat take" style="grid-column:16" data-k="2-9" title="第2排 第9位"></div>
+<div class="seat take" style="grid-column:17" data-k="2-10" title="第2排 第10位"></div>
+<div class="seat take" style="grid-column:18" data-k="2-11" title="第2排 第11位"></div>
+<div class="seat take" style="grid-column:19" data-k="2-12" title="第2排 第12位"></div>
+<div class="seat take" style="grid-column:26" data-k="2-13" title="第2排 第13位"></div>
+<div class="seat take" style="grid-column:27" data-k="2-14" title="第2排 第14位"></div>
+<div class="seat take" style="grid-column:28" data-k="2-15" title="第2排 第15位"></div>
+<div class="seat take" style="grid-column:29" data-k="2-16" title="第2排 第16位"></div>
+<div class="rl">3</div>
+<div class="seat take" style="grid-column:2" data-k="3-1" title="第3排 第1位"></div>
+<div class="seat take" style="grid-column:3" data-k="3-2" title="第3排 第2位"></div>
+<div class="seat take" style="grid-column:4" data-k="3-3" title="第3排 第3位"></div>
+<div class="seat take" style="grid-column:5" data-k="3-4" title="第3排 第4位"></div>
+<div class="seat take" style="grid-column:6" data-k="3-5" title="第3排 第5位"></div>
+<div class="seat take" style="grid-column:12" data-k="3-6" title="第3排 第6位"></div>
+<div class="seat take" style="grid-column:13" data-k="3-7" title="第3排 第7位"></div>
+<div class="seat take" style="grid-column:14" data-k="3-8" title="第3排 第8位"></div>
+<div class="seat take" style="grid-column:15" data-k="3-9" title="第3排 第9位"></div>
+<div class="seat take" style="grid-column:16" data-k="3-10" title="第3排 第10位"></div>
+<div class="seat take" style="grid-column:17" data-k="3-11" title="第3排 第11位"></div>
+<div class="seat take" style="grid-column:18" data-k="3-12" title="第3排 第12位"></div>
+<div class="seat take" style="grid-column:19" data-k="3-13" title="第3排 第13位"></div>
+<div class="seat take" style="grid-column:25" data-k="3-14" title="第3排 第14位"></div>
+<div class="seat take" style="grid-column:26" data-k="3-15" title="第3排 第15位"></div>
+<div class="seat take" style="grid-column:27" data-k="3-16" title="第3排 第16位"></div>
+<div class="seat take" style="grid-column:28" data-k="3-17" title="第3排 第17位"></div>
+<div class="seat take" style="grid-column:29" data-k="3-18" title="第3排 第18位"></div>
+<div class="rl">4</div>
+<div class="seat take" style="grid-column:2" data-k="4-1" title="第4排 第1位"></div>
+<div class="seat take" style="grid-column:3" data-k="4-2" title="第4排 第2位"></div>
+<div class="seat take" style="grid-column:4" data-k="4-3" title="第4排 第3位"></div>
+<div class="seat take" style="grid-column:5" data-k="4-4" title="第4排 第4位"></div>
+<div class="seat take" style="grid-column:6" data-k="4-5" title="第4排 第5位"></div>
+<div class="seat take" style="grid-column:11" data-k="4-6" title="第4排 第6位"></div>
+<div class="seat take" style="grid-column:12" data-k="4-7" title="第4排 第7位"></div>
+<div class="seat take" style="grid-column:13" data-k="4-8" title="第4排 第8位"></div>
+<div class="seat take" style="grid-column:14" data-k="4-9" title="第4排 第9位"></div>
+<div class="seat take" style="grid-column:15" data-k="4-10" title="第4排 第10位"></div>
+<div class="seat take" style="grid-column:16" data-k="4-11" title="第4排 第11位"></div>
+<div class="seat take" style="grid-column:17" data-k="4-12" title="第4排 第12位"></div>
+<div class="seat take" style="grid-column:18" data-k="4-13" title="第4排 第13位"></div>
+<div class="seat take" style="grid-column:19" data-k="4-14" title="第4排 第14位"></div>
+<div class="seat take" style="grid-column:20" data-k="4-15" title="第4排 第15位"></div>
+<div class="seat take" style="grid-column:25" data-k="4-16" title="第4排 第16位"></div>
+<div class="seat take" style="grid-column:26" data-k="4-17" title="第4排 第17位"></div>
+<div class="seat take" style="grid-column:27" data-k="4-18" title="第4排 第18位"></div>
+<div class="seat take" style="grid-column:28" data-k="4-19" title="第4排 第19位"></div>
+<div class="seat take" style="grid-column:29" data-k="4-20" title="第4排 第20位"></div>
+<div class="rl">5</div>
+<div class="seat take" style="grid-column:2" data-k="5-1" title="第5排 第1位"></div>
+<div class="seat take" style="grid-column:3" data-k="5-2" title="第5排 第2位"></div>
+<div class="seat take" style="grid-column:4" data-k="5-3" title="第5排 第3位"></div>
+<div class="seat take" style="grid-column:5" data-k="5-4" title="第5排 第4位"></div>
+<div class="seat take" style="grid-column:6" data-k="5-5" title="第5排 第5位"></div>
+<div class="seat take" style="grid-column:7" data-k="5-6" title="第5排 第6位"></div>
+<div class="seat take" style="grid-column:11" data-k="5-7" title="第5排 第7位"></div>
+<div class="seat take" style="grid-column:12" data-k="5-8" title="第5排 第8位"></div>
+<div class="seat take" style="grid-column:13" data-k="5-9" title="第5排 第9位"></div>
+<div class="seat take" style="grid-column:14" data-k="5-10" title="第5排 第10位"></div>
+<div class="seat take" style="grid-column:15" data-k="5-11" title="第5排 第11位"></div>
+<div class="seat take" style="grid-column:16" data-k="5-12" title="第5排 第12位"></div>
+<div class="seat take" style="grid-column:17" data-k="5-13" title="第5排 第13位"></div>
+<div class="seat take" style="grid-column:18" data-k="5-14" title="第5排 第14位"></div>
+<div class="seat take" style="grid-column:19" data-k="5-15" title="第5排 第15位"></div>
+<div class="seat take" style="grid-column:20" data-k="5-16" title="第5排 第16位"></div>
+<div class="seat take" style="grid-column:24" data-k="5-17" title="第5排 第17位"></div>
+<div class="seat take" style="grid-column:25" data-k="5-18" title="第5排 第18位"></div>
+<div class="seat take" style="grid-column:26" data-k="5-19" title="第5排 第19位"></div>
+<div class="seat take" style="grid-column:27" data-k="5-20" title="第5排 第20位"></div>
+<div class="seat take" style="grid-column:28" data-k="5-21" title="第5排 第21位"></div>
+<div class="seat take" style="grid-column:29" data-k="5-22" title="第5排 第22位"></div>
+<div class="rl">6</div>
+<div class="seat take" style="grid-column:2" data-k="6-1" title="第6排 第1位"></div>
+<div class="seat take" style="grid-column:3" data-k="6-2" title="第6排 第2位"></div>
+<div class="seat take" style="grid-column:4" data-k="6-3" title="第6排 第3位"></div>
+<div class="seat take" style="grid-column:5" data-k="6-4" title="第6排 第4位"></div>
+<div class="seat take" style="grid-column:6" data-k="6-5" title="第6排 第5位"></div>
+<div class="seat take" style="grid-column:7" data-k="6-6" title="第6排 第6位"></div>
+<div class="seat take" style="grid-column:8" data-k="6-7" title="第6排 第7位"></div>
+<div class="seat take" style="grid-column:10" data-k="6-8" title="第6排 第8位"></div>
+<div class="seat take" style="grid-column:11" data-k="6-9" title="第6排 第9位"></div>
+<div class="seat take" style="grid-column:12" data-k="6-10" title="第6排 第10位"></div>
+<div class="seat take" style="grid-column:13" data-k="6-11" title="第6排 第11位"></div>
+<div class="seat take" style="grid-column:14" data-k="6-12" title="第6排 第12位"></div>
+<div class="seat take" style="grid-column:15" data-k="6-13" title="第6排 第13位"></div>
+<div class="seat take" style="grid-column:16" data-k="6-14" title="第6排 第14位"></div>
+<div class="seat take" style="grid-column:17" data-k="6-15" title="第6排 第15位"></div>
+<div class="seat take" style="grid-column:18" data-k="6-16" title="第6排 第16位"></div>
+<div class="seat take" style="grid-column:19" data-k="6-17" title="第6排 第17位"></div>
+<div class="seat take" style="grid-column:20" data-k="6-18" title="第6排 第18位"></div>
+<div class="seat take" style="grid-column:21" data-k="6-19" title="第6排 第19位"></div>
+<div class="seat take" style="grid-column:23" data-k="6-20" title="第6排 第20位"></div>
+<div class="seat take" style="grid-column:24" data-k="6-21" title="第6排 第21位"></div>
+<div class="seat take" style="grid-column:25" data-k="6-22" title="第6排 第22位"></div>
+<div class="seat take" style="grid-column:26" data-k="6-23" title="第6排 第23位"></div>
+<div class="seat take" style="grid-column:27" data-k="6-24" title="第6排 第24位"></div>
+<div class="seat take" style="grid-column:28" data-k="6-25" title="第6排 第25位"></div>
+<div class="seat take" style="grid-column:29" data-k="6-26" title="第6排 第26位"></div>
+<div class="rl">7</div>
+<div class="seat free" style="grid-column:2" data-k="7-1" title="第7排 第1位"></div>
+<div class="seat free" style="grid-column:3" data-k="7-2" title="第7排 第2位"></div>
+<div class="seat free" style="grid-column:4" data-k="7-3" title="第7排 第3位"></div>
+<div class="seat free" style="grid-column:5" data-k="7-4" title="第7排 第4位"></div>
+<div class="seat free" style="grid-column:6" data-k="7-5" title="第7排 第5位"></div>
+<div class="seat free" style="grid-column:7" data-k="7-6" title="第7排 第6位"></div>
+<div class="seat free" style="grid-column:8" data-k="7-7" title="第7排 第7位"></div>
+<div class="seat free" style="grid-column:10" data-k="7-8" title="第7排 第8位"></div>
+<div class="seat free" style="grid-column:11" data-k="7-9" title="第7排 第9位"></div>
+<div class="seat bad" style="grid-column:12" title="第7排 第10位">故障</div>
+<div class="seat free" style="grid-column:13" data-k="7-11" title="第7排 第11位"></div>
+<div class="seat take" style="grid-column:14" data-k="7-12" title="第7排 第12位"></div>
+<div class="seat take" style="grid-column:15" data-k="7-13" title="第7排 第13位"></div>
+<div class="seat take" style="grid-column:16" data-k="7-14" title="第7排 第14位"></div>
+<div class="seat take" style="grid-column:17" data-k="7-15" title="第7排 第15位"></div>
+<div class="seat take" style="grid-column:18" data-k="7-16" title="第7排 第16位"></div>
+<div class="seat free" style="grid-column:19" data-k="7-17" title="第7排 第17位"></div>
+<div class="seat free" style="grid-column:20" data-k="7-18" title="第7排 第18位"></div>
+<div class="seat free" style="grid-column:21" data-k="7-19" title="第7排 第19位"></div>
+<div class="seat free" style="grid-column:23" data-k="7-20" title="第7排 第20位"></div>
+<div class="seat free" style="grid-column:24" data-k="7-21" title="第7排 第21位"></div>
+<div class="seat free" style="grid-column:25" data-k="7-22" title="第7排 第22位"></div>
+<div class="seat free" style="grid-column:26" data-k="7-23" title="第7排 第23位"></div>
+<div class="seat free" style="grid-column:27" data-k="7-24" title="第7排 第24位"></div>
+<div class="seat free" style="grid-column:28" data-k="7-25" title="第7排 第25位"></div>
+<div class="seat free" style="grid-column:29" data-k="7-26" title="第7排 第26位"></div></div></div>
+<p class="swipe">座位圖可左右滑動</p>
+<p class="legend"><span><i style="background:#eef3fb;border-color:#9db4d6"></i>已分配</span>
+<span><i style="border-style:dashed"></i>空位</span>
+<span><i style="background:#ffd84d;border-color:#b8860b"></i>你的座位</span></p>
+<p class="note">第 1 排（最靠講台）保留不排，想坐前面的同學可自行前移。<br>
+本頁不儲存也不顯示任何學號；查詢完全在你的瀏覽器裡完成。</p>
+</div>
+<script>
+const MAP={"bdb7097c1a35afbc": "2-1", "6ed0101f98fa4cc4": "2-2", "e2ea4cbd212a1de1": "2-3", "9f8d76c220119312": "2-4", "185923fe82c6b7be": "2-5", "f60c6c0bd86c89f7": "2-6", "afe871391e728b78": "2-7", "d4d1ea0c273ef919": "2-8", "fa098b9068cce8a9": "2-9", "2e79f781c17c9e76": "2-10", "66b22dc462cb408a": "2-11", "64103f0ac88547d2": "2-12", "fab90cf96efc6bc1": "2-13", "9a9aa0470e9408e1": "2-14", "da4210fd7166e702": "2-15", "55bcc9a4b2dae075": "2-16", "bba03f0ecd85e4b4": "3-1", "0391edc820b74fb6": "3-2", "a624081ee96db4bc": "3-3", "bfcce80e063274af": "3-4", "caf69e2dc8f875cc": "3-5", "4e0c07793664538a": "3-6", "961cc659f3ccfe48": "3-7", "632908ea1fb231e5": "3-8", "95514d567123694c": "3-9", "d2aae2a06fd4d77a": "3-10", "b204d03f50cdccbb": "3-11", "5b1448c1d4bd6777": "3-12", "5a3f365c496f52e0": "3-13", "1cd7efe56f260db2": "3-14", "b02c1847b69df55e": "3-15", "5dc148b53def35b2": "3-16", "dce91d4a356474d8": "3-17", "f01ff510fbf86ac8": "3-18", "fc5adea184967b94": "4-1", "ef3f655bf463de29": "4-2", "453f742ebc7e6fa4": "4-3", "8a00af9c153ed6f0": "4-4", "8c2ab3f67be7c0a7": "4-5", "e35cd5ea6220ad14": "4-6", "577f9e38d2520803": "4-7", "d9d146e934e09dd8": "4-8", "5eb7230ce04dd579": "4-9", "66e3a72be47ffd2d": "4-10", "22c672515e3db813": "4-11", "7fc44ac4bb0e8641": "4-12", "4ceb14bb9adc799b": "4-13", "e71816a0d8192140": "4-14", "a73a40ebbb380a5d": "4-15", "9c53a5abbfbf4f44": "4-16", "e9f6789260e530f4": "4-17", "2445b01dfc72c900": "4-18", "d0b9a9a21fc4128e": "4-19", "f6e5b63d0475eaf6": "4-20", "14ff9320df7e4bcc": "5-1", "3ad01607bdd1f410": "5-2", "a2a9656172313055": "5-3", "17a47374f94d97a2": "5-4", "e9a22f6f49c396f0": "5-5", "876fb232ccd8268d": "5-6", "54865f669560b1f7": "5-7", "ad3d306a497ef7ee": "5-8", "a83fa1dab1cbd310": "5-9", "4fb725d0ab82de59": "5-10", "e27784ffdb3e5626": "5-11", "55c271668e45aaa8": "5-12", "e9275734e86b71fd": "5-13", "930db96fb8e97e5a": "5-14", "6d14b182d420aced": "5-15", "16b6b1024283bc4e": "5-16", "a46f87a9e11bd30b": "5-17", "c09bf356b863b721": "5-18", "194b6a79be56df39": "5-19", "628e609d02a235c3": "5-20", "0f5edd52cd98722f": "5-21", "a04d14fb10848b69": "5-22", "11b6e0213e64c031": "6-1", "b2a466931e15c473": "6-2", "28c275dc43b633b6": "6-3", "1d89ed746b115e0c": "6-4", "1473eeab38f5c075": "6-5", "7b9b770085c0fbe0": "6-6", "d2cb26788791284e": "6-7", "f517bd1a3fc1de51": "6-8", "d83e2d1a930edc26": "6-9", "33eedadf922fa698": "6-10", "a040301140793607": "6-11", "2a241779e1dfa358": "6-12", "cc1c82c581e3358d": "6-13", "b66dfa17eaf71dad": "6-14", "eb0e9a124b6a9fe9": "6-15", "bf84db21b3252d58": "6-16", "635c66b1b79da812": "6-17", "e742c0c56241d840": "6-18", "41cfbdb1542ab307": "6-19", "bbd1bcafe58b59b4": "6-20", "4288d20c4905cc3d": "6-21", "8dcce12bb98f5f97": "6-22", "adec23e70ae596f3": "6-23", "7f21c8bc7a17997c": "6-24", "46faa008231165a8": "6-25", "46d32c796eac9f8a": "6-26", "b52c1731255ef430": "7-12", "a7139305110da018": "7-13", "3b813987ef4c2b55": "7-14", "e73247125bf277ac": "7-15", "eba050cae58e179c": "7-16"},SALT="7204f7693b46545a141efeab86b10b37",IT=200000;
+const q=document.getElementById('q'),go=document.getElementById('go'),ans=document.getElementById('ans');
+function hex2buf(h){const a=new Uint8Array(h.length/2);
+  for(let i=0;i<a.length;i++)a[i]=parseInt(h.substr(i*2,2),16);return a;}
+async function key(sid){
+  const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(sid),'PBKDF2',false,['deriveBits']);
+  const b=await crypto.subtle.deriveBits({name:'PBKDF2',salt:hex2buf(SALT),iterations:IT,hash:'SHA-256'},k,256);
+  return [...new Uint8Array(b).slice(0,8)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+async function find(){
+  const sid=q.value.trim();
+  document.querySelectorAll('.seat.hit').forEach(e=>e.classList.remove('hit'));
+  if(!sid){ans.textContent='';return;}
+  go.disabled=true;ans.textContent='查詢中…';
+  const seat=MAP[await key(sid)];
+  go.disabled=false;
+  if(!seat){ans.textContent='查無此學號。請確認輸入是否正確（含開頭的 0），或與助教聯絡。';return;}
+  const [r,n]=seat.split('-');
+  const el=document.querySelector('.seat[data-k="'+seat+'"]');
+  if(el){el.classList.add('hit');el.textContent='你';
+    el.scrollIntoView({block:'center',inline:'center',behavior:'smooth'});}
+  ans.innerHTML='你的座位是 <b>第 '+r+' 排　第 '+n+' 位</b>（由左至右數）。';
+}
+go.onclick=find;q.addEventListener('keydown',e=>{if(e.key==='Enter')find();});
+</script></html>
