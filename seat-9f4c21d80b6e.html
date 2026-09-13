@@ -24,7 +24,12 @@ h1{font-size:19px;margin:0 0 2px}
 .legend i{display:inline-block;width:14px;height:14px;border-radius:3px;
           border:1px solid #c8c8c8;vertical-align:-2px;margin-right:5px}
 .note{margin-top:14px;font-size:12px;color:#555;line-height:1.8}
-@media print{.wrap{max-width:none;padding:0}@page{size:A4 landscape;margin:8mm}}
+@page{size:A4 landscape;margin:8mm}
+/* 列印時 width:100% 取的是瀏覽器視窗寬度，不是紙張寬度，grid 會撐爆紙面右緣。
+   所以改用絕對單位把寬度釘死。A4 橫向扣掉 @page 的 8mm 邊界後可用 281mm，
+   這裡取 273mm 再留 4mm 安全邊界——實體印表機都有自己的不可列印區，
+   抓剛好等於可列印寬度會在某些機器上被切掉最右一欄。 */
+@media print{.wrap{width:273mm;max-width:273mm;padding:0;margin:0 auto}}
 
 .box{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap}
 .box input{flex:1 1 200px;min-width:0;padding:10px 12px;font-size:16px;
